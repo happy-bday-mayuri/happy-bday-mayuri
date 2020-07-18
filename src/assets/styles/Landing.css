@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-
+body {
+  overflow-x: hidden;
+}
 .landing-pg .banner-section {
-  widows: 100vw;
-  height: 530px;
+  width: 100vw;
+  height: 500px;
+}
+.landing-pg .text {
+  margin-top: 5%;
+}
+.landing-pg .text p {
+  letter-spacing: 1px;
+  line-height: 20px;
 }
 .landing-pg .banner-slider-div {
   padding-top: 0%;
@@ -17,8 +26,8 @@
   height: 100%;
   vertical-align: middle;
   margin: auto;
-  object-position: cover;
-  object-fit: cover;
+  object-position: top center;
+  object-fit: contain;
 }
 .landing-pg .banner-text {
   position: absolute;
@@ -45,14 +54,14 @@
 .landing-pg .banner-text span {
   font-size: 16px;
   position: relative;
-  top: -3px;
+  top: 0px;
   color: white;
   opacity: 0.9;
 }
 .landing-pg .banner-text #span2 {
   font-size: 16px;
   position: relative;
-  top: 27px;
+  top: 31px;
   color: white;
   opacity: 0.9;
 }
@@ -88,6 +97,65 @@
   font-size: 22px;
   margin-block-start: -0.5%;
 }
+.landing-pg .quote-section {
+  margin: 3% auto;
+  width: 86vw;
+  background-color: #aeeae3;
+  height: 80px;
+  padding: 2%;
+}
+.landing-pg .quote-section p {
+  font-family: "Pacifico";
+  text-align: center;
+  font-weight: normal;
+  color: #424242;
+  font-size: 24px;
+}
+.landing-pg .maya-portraits {
+  display: grid;
+  grid-template-columns: 31% 36% 31%;
+  grid-gap: 1%;
+  margin: auto;
+  width: 90vw;
+  padding: 0px 30px 20px 30px;
+}
+.landing-pg .maya-portraits .left-grid {
+  height: 500px;
+}
+.landing-pg .maya-portraits .left-grid .slideshow-img-div {
+  width: 100%;
+  height: 500px;
+}
+.landing-pg .maya-portraits .left-grid .slideshow-img-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+.landing-pg #girl-you-are-gorgeous-div {
+  position: relative;
+  top: 20%;
+}
+.landing-pg #girl {
+  font-family: "Pacifico";
+  text-align: center;
+  font-weight: normal;
+  color: #424242;
+  font-size: 30px;
+}
+.landing-pg #you-are {
+  text-align: center;
+  font-weight: normal;
+  color: #424242;
+  font-size: 30px;
+}
+.landing-pg #gorgeous {
+  font-family: "Pacifico";
+  text-align: center;
+  font-weight: normal;
+  color: #2a9d8f;
+  font-size: 38px;
+}
 .grid-section {
   text-align: center;
 }
@@ -98,15 +166,14 @@
   padding: 0 10px;
   margin: 0 40px -10px 40px;
   background-color: #fff;
-  font-family: Playfair Display, sans-serif;
 }
 .grid-prod-div {
   margin: auto;
   width: 90vw;
+  padding: 0px 30px 20px 30px;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 2%;
-  padding: 0px 30px 20px 30px;
 }
 
 .single-banner {
@@ -143,7 +210,7 @@
   width: 100%;
   object-fit: cover;
   height: 276px;
-  object-position: center;
+  object-position: top center;
 }
 
 .single-banner .inner-text {
@@ -159,13 +226,13 @@
   width: 100%;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: flex-end;
   height: 100%;
   cursor: pointer;
 }
 
 .single-banner .inner-text h4 {
-  color: #252525;
+  color: #424242;
   font-weight: 700;
   padding: 11px 28px;
   background: #ffffff;
@@ -224,4 +291,313 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+/***************************************** MEDIA QUERIES *************************************/
+@media screen and (max-width: 425px) {
+  @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+  body {
+    overflow-x: hidden;
+  }
+  .landing-pg .banner-section {
+    width: 100vw;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+  .landing-pg .text {
+    margin-top: 5%;
+    width: 100vw;
+    padding: 0 1%;
+  }
+  .landing-pg .text p {
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-size: 12px;
+  }
+  .landing-pg .banner-slider-div {
+    padding-top: 0%;
+    overflow: hidden;
+    height: 180px;
+  }
+  .landing-pg .banner-div {
+    position: relative;
+  }
+  .landing-pg .banner-image {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    margin: auto;
+    object-position: top center;
+    object-fit: contain;
+  }
+  .landing-pg .banner-text {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    width: 100px;
+    height: 100px;
+    background: #2a9d8f;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .landing-pg .banner-text:after {
+    position: absolute;
+    content: "";
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    border: 2px solid #f5f5f5;
+    left: 5px;
+    top: 5px;
+    opacity: 0.6;
+    border-radius: 50%;
+  }
+  .landing-pg .banner-text span {
+    font-size: 8px;
+    position: relative;
+    top: -5px;
+    color: white;
+    opacity: 0.9;
+  }
+  .landing-pg .banner-text #span2 {
+    font-size: 8px;
+    position: relative;
+    top: 4px;
+    color: white;
+    opacity: 0.9;
+  }
+  .landing-pg .banner-text h6 {
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 1;
+    line-height: 35px;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+  }
+
+  .landing-pg .banner-text p {
+    margin-block-start: -4%;
+    text-transform: capitalize;
+    font-size: 10px;
+    font-family: "Pacifico";
+  }
+  .landing-pg .happy-bday-title-section {
+    height: 60px;
+    background-color: #0d0d10;
+    padding: 2%;
+    background-image: url("../images/happy.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .landing-pg .happy-bday-title-section h1 {
+    font-family: "Pacifico";
+    text-align: left;
+    font-weight: normal;
+    color: #fff;
+    font-size: 22px;
+    margin-block-start: -0.5%;
+  }
+  .landing-pg .quote-section {
+    margin: 2% auto;
+    width: 86vw;
+    background-color: #aeeae3;
+    height: 80px;
+    padding: 2%;
+  }
+  .landing-pg .quote-section p {
+    font-family: "Pacifico";
+    text-align: center;
+    font-weight: normal;
+    color: #424242;
+    font-size: 16px;
+  }
+  .landing-pg .maya-portraits {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 1%;
+    margin: 0px auto 30px;
+    width: 90vw;
+    padding: 2%;
+  }
+  .landing-pg .maya-portraits .left-grid {
+    height: 500px;
+  }
+  .landing-pg .maya-portraits .left-grid .slideshow-img-div {
+    width: 100%;
+    height: 500px;
+  }
+  .landing-pg .maya-portraits .left-grid .slideshow-img-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+  .landing-pg #girl-you-are-gorgeous-div {
+    position: relative;
+    top: 0%;
+  }
+  .landing-pg #girl {
+    font-family: "Pacifico";
+    text-align: center;
+    font-weight: normal;
+    color: #424242;
+    font-size: 24px;
+  }
+  .landing-pg #you-are {
+    text-align: center;
+    font-weight: normal;
+    color: #424242;
+    font-size: 24px;
+  }
+  .landing-pg #gorgeous {
+    font-family: "Pacifico";
+    text-align: center;
+    font-weight: normal;
+    color: #2a9d8f;
+    font-size: 30px;
+  }
+  .grid-section {
+    text-align: center;
+  }
+  .grid-products-text span {
+    float: left;
+    font-size: 24px;
+    color: #424242;
+    padding: 0 10px;
+    margin: 0 40px -10px 40px;
+    background-color: #fff;
+  }
+  .grid-prod-div {
+    margin: auto;
+    width: 90vw;
+    padding: 0px 30px 20px 30px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 2%;
+  }
+
+  .single-banner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .single-banner:hover::before {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    cursor: pointer;
+  }
+
+  .single-banner::before {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    border: 13px solid #2a9d8f;
+    content: "";
+    opacity: 0.3;
+    width: calc(100% - 80px);
+    height: calc(100% - 80px);
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .single-banner img {
+    width: 100%;
+    object-fit: cover;
+    height: 276px;
+    object-position: top center;
+  }
+
+  .single-banner .inner-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: flex-end;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .single-banner .inner-text h4 {
+    color: #424242;
+    font-weight: 700;
+    padding: 11px 28px;
+    background: #ffffff;
+    border-radius: 2px;
+    opacity: 0.8;
+  }
+
+  .landing-pg .shweta-maya-title {
+    display: inline-block;
+    border-bottom: 1px solid #424242;
+    background-color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .landing-pg .shweta-maya-title span {
+    float: left;
+    font-size: 24px;
+    color: #424242;
+    padding: 0 10px;
+    margin: 0 40px -10px 40px;
+    background-color: #fff;
+    font-family: "Pacifico";
+  }
+  .landing-pg .shweta-maya {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 2%;
+    height: fit-content;
+    padding: 0;
+    margin: 0% auto;
+  }
+  .landing-pg .shweta-maya .left-grid {
+    background-image: url("../images/shwetaMaya1.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+  .landing-pg .shweta-maya .left-grid-poro {
+    background-image: url("../images/poroMaya2.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+  .landing-pg .shweta-maya .left-grid-ashu {
+    background-image: url("../images/ashuMaya1.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+  .landing-pg .shweta-maya .slideshow-img-div {
+    width: 100%;
+    margin: auto;
+    height: 150px;
+  }
+  .landing-pg .shweta-maya .slideshow-img-div img {
+    width: 92%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 }

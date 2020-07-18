@@ -5,6 +5,7 @@ import banner3 from "./images/banner3.jpg";
 import banner4 from "./images/banner4.jpg";
 import banner5 from "./images/banner5.jpg";
 import banner6 from "./images/banner6.jpg";
+import banner7 from "./images/banner7.jpg";
 import portrait1 from "./images/portrait1.jpg";
 import portrait2 from "./images/portrait2.jpg";
 import portrait3 from "./images/portrait3.jpg";
@@ -60,6 +61,13 @@ import poroMaya5 from "./images/poroMaya5.jpg";
 // ashu-maya images
 import ashuMaya1 from "./images/ashuMaya1.jpg";
 import ashuMaya2 from "./images/ashuMaya2.jpg";
+import ashuMaya3 from "./images/ashuMaya3.jpg";
+import ashuMaya4 from "./images/ashuMaya4.jpg";
+import ashuMaya5 from "./images/ashuMaya5.jpg";
+import ashuMaya6 from "./images/ashuMaya6.jpg";
+import ashuMaya7 from "./images/ashuMaya7.jpg";
+
+import group2 from "./images/group2.JPG";
 export {
   happyBday,
   banner1,
@@ -68,6 +76,7 @@ export {
   banner4,
   banner5,
   banner6,
+  banner7,
   portrait1,
   portrait2,
   portrait3,
@@ -85,6 +94,11 @@ export {
   portrait15,
   ashuMaya1,
   ashuMaya2,
+  ashuMaya3,
+  ashuMaya4,
+  ashuMaya5,
+  ashuMaya6,
+  ashuMaya7,
   shwetaMaya1,
   shwetaMaya2,
   shwetaMaya3,
@@ -113,5 +127,6 @@ export {
   poroMaya2,
   poroMaya3,
   poroMaya4,
-  poroMaya5
+  poroMaya5,
+  group2
 };
